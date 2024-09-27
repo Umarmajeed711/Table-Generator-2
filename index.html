@@ -24,7 +24,7 @@
 <body>
     <div class="container mt-3  d-flex justify-content-around flex-wrap flex-column ">
         <div class="d-flex justify-content-center flex-wrap" style="height: 50vh;">
-            <div class="d-flex flex-column justify-content-around align-content-center">
+            <div class="d-flex flex-column justify-content-around align-content-center" style="height: 50%;">
             <h1 class="mt-5">Table Generator</h1>
             <input type="number" id="input1" placeholder="enter table number" required class="focus mt-3"></p>
             <input type="number" id="input2" placeholder="enter table limit" required class="focus"></p>
@@ -49,7 +49,7 @@
                            <td>${i}</td>
                            <td>=</td>
                            <td>${tableno * i}</td>
-                           </tr>`
+                           </tr><br>`
             }
             document.querySelector("#table").innerHTML = table;
         }
